@@ -19,8 +19,36 @@ namespace DemoCraftSpring2023Wednesday
         {
             //using ToString("c") to format a number as currency
             Print($"{player.Name} you have {player.Currency.ToString("c")} currency");
-
+            Menu();
             Console.ReadKey();
+        }
+
+        private void Menu()
+        {
+            Print("Choose and option from the menu...");
+            Print("1) See your inventory");
+            Print("2) Trade");
+            Print("3) Exit the application");
+
+            switch(Console.ReadLine())
+            {
+                case "1":
+                    //show inventory
+                    Print(player.ShowInventory());
+                    break;
+
+                case "2":
+                    //trade
+                    break;
+
+                case "3":
+                    Environment.Exit(0);
+                    break;
+
+            }
+
+            Menu();
+
         }
 
         //example method returning an instance

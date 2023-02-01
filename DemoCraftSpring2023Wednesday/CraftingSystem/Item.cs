@@ -11,5 +11,9 @@ namespace DemoCraftSpring2023Wednesday
         private string name;
         private double value;
         private double amount;
+
+        public string Name { get => name; set => name = value; }
+        public double Value { get => value; set => this.value = value; }
+        public double Amount { get => amount; set => amount = value; }
     }
 }
