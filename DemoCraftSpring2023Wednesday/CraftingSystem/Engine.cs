@@ -25,7 +25,7 @@ namespace DemoCraftSpring2023Wednesday
 
         private void Menu()
         {
-            Print("Choose and option from the menu...");
+            Print("Choose an option from the menu...");
             Print("1) See your inventory");
             Print("2) Trade");
             Print("3) Exit the application");
