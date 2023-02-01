@@ -29,7 +29,7 @@ namespace DemoCraftSpring2023Wednesday
 
         public Player()
         {
-
+            //overloaded Player constructor that takes no arguments
         }
 
         public string ShowInventory()
