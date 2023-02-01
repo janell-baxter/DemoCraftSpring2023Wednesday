@@ -5,7 +5,7 @@ using System.Text;
 
 namespace DemoCraftSpring2023Wednesday
 {
-    public class Product: Item
+    public class Product : Item
     {
     }
 }

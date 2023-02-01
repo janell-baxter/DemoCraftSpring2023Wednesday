@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace DemoCraftSpring2023Wednesday
 {
-    internal class Recipe
+    public class Item
     {
+        private string name;
+        private double value;
+        private double amount;
     }
 }

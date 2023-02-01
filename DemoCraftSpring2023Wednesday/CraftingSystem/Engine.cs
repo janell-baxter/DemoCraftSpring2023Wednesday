@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using static DemoCraftSpring2023Wednesday.Display;
 namespace DemoCraftSpring2023Wednesday
 {
     public class Engine
@@ -12,16 +13,18 @@ namespace DemoCraftSpring2023Wednesday
         //Player player = new Player("Anonymous Person");
 
         //object initialization
-        Player player = new Player() {Name = "Anonymous Person" };
+        Player player = new Player() { Name = "Anonymous Person" };
 
         public void Run()
         {
-            Console.WriteLine($"{player.Name} you have {player.Currency.ToString("c")} currency");
-        
+            //using ToString("c") to format a number as currency
+            Print($"{player.Name} you have {player.Currency.ToString("c")} currency");
+
             Console.ReadKey();
         }
 
-        public Product Craft (Item item)
+        //example method returning an instance
+        public Product Craft(Recipe recipe)
         {
 
             return new Product();
