@@ -44,7 +44,6 @@ namespace DemoCraftSpring2023Wednesday
                 case "3":
                     Environment.Exit(0);
                     break;
-
             }
 
             Menu();
@@ -54,7 +53,7 @@ namespace DemoCraftSpring2023Wednesday
         //example method returning an instance
         public Product Craft(Recipe recipe)
         {
-
+            //add code here to craft a product
             return new Product();
         }
 

@@ -8,7 +8,7 @@ namespace DemoCraftSpring2023Wednesday
 {
     public class Item
     {
-        private string name;
+        private string name = "An item";
         private double value;
         private double amount;
 
