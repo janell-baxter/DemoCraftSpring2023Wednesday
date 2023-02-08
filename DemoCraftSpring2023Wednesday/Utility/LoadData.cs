@@ -23,15 +23,11 @@ namespace DemoCraftSpring2023Wednesday
         {
             List<Item> items = new List<Item>();
             string[] itemNames = File.ReadAllLines(path);
-            foreach (string itemName in itemNames)
+            for (int i = 0; i < itemNames.Length; i += 2)
             {
-                items.Add(
-                    new Item() 
-                { 
-                    Name = itemName 
-                });
+                bool success = double.TryParse(itemNames[i + 1], out double amount);
+                items.Add(new Item() { Name = itemNames[i], Amount = amount });
             }
-
             return items;
         }
 
