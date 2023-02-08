@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 using static DemoCraftSpring2023Wednesday.Display;
+using static DemoCraftSpring2023Wednesday.LoadData;
+
+
 namespace DemoCraftSpring2023Wednesday
 {
     public class Engine
@@ -13,10 +16,12 @@ namespace DemoCraftSpring2023Wednesday
         //Player player = new Player("Anonymous Person");
 
         //object initialization
-        Player player = new Player() { Name = "Anonymous Person" };
+        Player player = new Player();
 
         public void Run()
         {
+            player.Name = LoadTextFromTextFile("../../../data/playerName.txt");
+            player.Inventory = CreateInventoryItemsFromTextFile("../../../data/inventory.txt");
             //using ToString("c") to format a number as currency
             Print($"{player.Name} you have {player.Currency.ToString("c")} currency");
             Menu();

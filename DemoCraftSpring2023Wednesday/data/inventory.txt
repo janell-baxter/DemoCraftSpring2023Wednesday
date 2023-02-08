@@ -1,0 +1,10 @@
+Water
+10
+Ashwagandha
+14
+Chamomile
+4
+Lavender
+6
+Lemon Balm
+8
